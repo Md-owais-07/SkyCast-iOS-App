@@ -7,11 +7,13 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class OnboardingVC: UIViewController {
+    @IBOutlet weak var btnStart: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        btnStart.layer.cornerRadius = 12
     }
 
 

@@ -9,23 +9,26 @@
 /* Begin PBXBuildFile section */
 		E99CC52D2C5E60A500847382 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E99CC52C2C5E60A500847382 /* AppDelegate.swift */; };
 		E99CC52F2C5E60A500847382 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E99CC52E2C5E60A500847382 /* SceneDelegate.swift */; };
-		E99CC5312C5E60A500847382 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E99CC5302C5E60A500847382 /* ViewController.swift */; };
+		E99CC5312C5E60A500847382 /* OnboardingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E99CC5302C5E60A500847382 /* OnboardingVC.swift */; };
 		E99CC5342C5E60A500847382 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = E99CC5332C5E60A500847382 /* Base */; };
 		E99CC5372C5E60A500847382 /* SkyCast.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E99CC5352C5E60A500847382 /* SkyCast.xcdatamodeld */; };
 		E99CC5392C5E60A600847382 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E99CC5382C5E60A600847382 /* Assets.xcassets */; };
 		E99CC53C2C5E60A600847382 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = E99CC53B2C5E60A600847382 /* Base */; };
+		E9FF79612D08D62E00A4FF3C /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FF79602D08D62E00A4FF3C /* HomeVC.swift */; };
+		E9FF79662D08D8E500A4FF3C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E99CC53A2C5E60A600847382 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E99CC5292C5E60A500847382 /* SkyCast.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SkyCast.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E99CC52C2C5E60A500847382 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E99CC52E2C5E60A500847382 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E99CC5302C5E60A500847382 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E99CC5302C5E60A500847382 /* OnboardingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingVC.swift; sourceTree = "<group>"; };
 		E99CC5332C5E60A500847382 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E99CC5362C5E60A500847382 /* SkyCast.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SkyCast.xcdatamodel; sourceTree = "<group>"; };
 		E99CC5382C5E60A600847382 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E99CC53B2C5E60A600847382 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E99CC53D2C5E60A600847382 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E9FF79602D08D62E00A4FF3C /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +61,89 @@
 		E99CC52B2C5E60A500847382 /* SkyCast */ = {
 			isa = PBXGroup;
 			children = (
-				E99CC52C2C5E60A500847382 /* AppDelegate.swift */,
-				E99CC52E2C5E60A500847382 /* SceneDelegate.swift */,
-				E99CC5302C5E60A500847382 /* ViewController.swift */,
+				E9FF79692D08DCC200A4FF3C /* Common */,
+				E9D4D44C2D08DD8D00291DA3 /* Sources */,
+				E9FF796A2D08DCDE00A4FF3C /* Services */,
+				E9FF79682D08DA6600A4FF3C /* Resources */,
+			);
+			path = SkyCast;
+			sourceTree = "<group>";
+		};
+		E9D4D44C2D08DD8D00291DA3 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				E9D4D44F2D08DE4E00291DA3 /* Storyboard */,
+				E9D4D44E2D08DDE000291DA3 /* Onboarding Screen */,
+				E9D4D44D2D08DDB000291DA3 /* Home Screen */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		E9D4D44D2D08DDB000291DA3 /* Home Screen */ = {
+			isa = PBXGroup;
+			children = (
+				E9FF79602D08D62E00A4FF3C /* HomeVC.swift */,
+			);
+			path = "Home Screen";
+			sourceTree = "<group>";
+		};
+		E9D4D44E2D08DDE000291DA3 /* Onboarding Screen */ = {
+			isa = PBXGroup;
+			children = (
+				E99CC5302C5E60A500847382 /* OnboardingVC.swift */,
+			);
+			path = "Onboarding Screen";
+			sourceTree = "<group>";
+		};
+		E9D4D44F2D08DE4E00291DA3 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
 				E99CC5322C5E60A500847382 /* Main.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		E9FF79682D08DA6600A4FF3C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				E99CC5382C5E60A600847382 /* Assets.xcassets */,
 				E99CC53A2C5E60A600847382 /* LaunchScreen.storyboard */,
 				E99CC53D2C5E60A600847382 /* Info.plist */,
 				E99CC5352C5E60A500847382 /* SkyCast.xcdatamodeld */,
 			);
-			path = SkyCast;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E9FF79692D08DCC200A4FF3C /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				E99CC52C2C5E60A500847382 /* AppDelegate.swift */,
+				E99CC52E2C5E60A500847382 /* SceneDelegate.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		E9FF796A2D08DCDE00A4FF3C /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				E9FF796C2D08DCF600A4FF3C /* Networking */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		E9FF796C2D08DCF600A4FF3C /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				E9FF796D2D08DD0500A4FF3C /* Api Manager */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		E9FF796D2D08DD0500A4FF3C /* Api Manager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Api Manager";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -129,6 +205,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E99CC5392C5E60A600847382 /* Assets.xcassets in Resources */,
+				E9FF79662D08D8E500A4FF3C /* LaunchScreen.storyboard in Resources */,
 				E99CC53C2C5E60A600847382 /* Base in Resources */,
 				E99CC5342C5E60A500847382 /* Base in Resources */,
 			);
@@ -141,9 +218,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E99CC5312C5E60A500847382 /* ViewController.swift in Sources */,
+				E99CC5312C5E60A500847382 /* OnboardingVC.swift in Sources */,
 				E99CC52D2C5E60A500847382 /* AppDelegate.swift in Sources */,
 				E99CC5372C5E60A500847382 /* SkyCast.xcdatamodeld in Sources */,
+				E9FF79612D08D62E00A4FF3C /* HomeVC.swift in Sources */,
 				E99CC52F2C5E60A500847382 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -294,16 +372,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4NP4L6636N;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = SkyCast/Info.plist;
+				INFOPLIST_FILE = "/Users/owais/Desktop/UIKIt-Project/SkyCast-iOS-App/SkyCast/Resources/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = SkyCast;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.weather";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = "";
+				INFOPLIST_KEY_UILaunchStoryboardName = la;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -317,7 +398,7 @@
 				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -326,16 +407,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4NP4L6636N;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = SkyCast/Info.plist;
+				INFOPLIST_FILE = "/Users/owais/Desktop/UIKIt-Project/SkyCast-iOS-App/SkyCast/Resources/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = SkyCast;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.weather";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = "";
+				INFOPLIST_KEY_UILaunchStoryboardName = la;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -349,7 +433,7 @@
 				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
