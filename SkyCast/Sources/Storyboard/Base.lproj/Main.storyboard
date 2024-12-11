@@ -141,13 +141,21 @@
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="search" textContentType="address-level2"/>
                                                     </textField>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WTw-UZ-xzO">
+                                                        <rect key="frame" x="0.0" y="0.0" width="41" height="40"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                    </button>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="WTw-UZ-xzO" secondAttribute="bottom" id="28d-ce-CAs"/>
                                                     <constraint firstItem="ZRY-p4-eiZ" firstAttribute="top" secondItem="9d7-7Q-Slg" secondAttribute="top" id="2a1-bP-SUR"/>
                                                     <constraint firstAttribute="bottom" secondItem="ZRY-p4-eiZ" secondAttribute="bottom" id="5co-DZ-RgC"/>
+                                                    <constraint firstItem="WTw-UZ-xzO" firstAttribute="leading" secondItem="9d7-7Q-Slg" secondAttribute="leading" id="AgL-9P-pou"/>
+                                                    <constraint firstItem="WTw-UZ-xzO" firstAttribute="top" secondItem="9d7-7Q-Slg" secondAttribute="top" id="Gn6-Gh-XVc"/>
                                                     <constraint firstAttribute="trailing" secondItem="ZRY-p4-eiZ" secondAttribute="trailing" id="SHS-QJ-3Hh"/>
                                                     <constraint firstAttribute="height" constant="40" id="aQ1-Vd-d2j"/>
+                                                    <constraint firstItem="ZRY-p4-eiZ" firstAttribute="leading" secondItem="WTw-UZ-xzO" secondAttribute="trailing" id="ik9-yg-7jK"/>
                                                     <constraint firstItem="OfO-vN-kia" firstAttribute="centerY" secondItem="9d7-7Q-Slg" secondAttribute="centerY" id="jKZ-RO-y01"/>
                                                     <constraint firstItem="OfO-vN-kia" firstAttribute="leading" secondItem="9d7-7Q-Slg" secondAttribute="leading" constant="8" id="lRN-zL-cBE"/>
                                                     <constraint firstItem="ZRY-p4-eiZ" firstAttribute="leading" secondItem="OfO-vN-kia" secondAttribute="trailing" constant="8" id="qhp-Wn-O2N"/>
@@ -236,8 +244,8 @@
                                                                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="XW2-0U-eA1">
                                                                                                 <rect key="frame" x="31.333333333333336" y="15" width="58.000000000000007" height="20"/>
                                                                                                 <subviews>
-                                                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="aqi.medium" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="mDx-We-wNF">
-                                                                                                        <rect key="frame" x="0.0" y="-1.6666666666666679" width="20" height="23.333333333333332"/>
+                                                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="humidity.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="mDx-We-wNF">
+                                                                                                        <rect key="frame" x="0.0" y="2" width="20.666666666666668" height="18.666666666666664"/>
                                                                                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                                         <constraints>
                                                                                                             <constraint firstAttribute="width" secondItem="mDx-We-wNF" secondAttribute="height" id="Wjk-gR-dLZ"/>
@@ -266,8 +274,8 @@
                                                                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="hGy-gr-1aj">
                                                                                                 <rect key="frame" x="30.666666666666689" y="15" width="59.333333333333343" height="20"/>
                                                                                                 <subviews>
-                                                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="thermometer.transmission" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="OWh-jq-Qva">
-                                                                                                        <rect key="frame" x="0.0" y="-0.3333333333333357" width="20" height="21.333333333333336"/>
+                                                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="thermometer.sun.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="OWh-jq-Qva">
+                                                                                                        <rect key="frame" x="0.0" y="-3.6666666666666643" width="21.333333333333332" height="25.666666666666664"/>
                                                                                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                                         <constraints>
                                                                                                             <constraint firstAttribute="width" secondItem="OWh-jq-Qva" secondAttribute="height" id="pxw-pn-dt9"/>
@@ -978,9 +986,13 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="btnGotoSearch" destination="WTw-UZ-xzO" id="oZP-PQ-iaI"/>
                         <outlet property="detailsView" destination="8lX-VB-BdG" id="XT6-iw-ogr"/>
                         <outlet property="forecastView" destination="GHc-ru-ulI" id="oLM-XM-1vi"/>
                         <outlet property="imageLogo" destination="fYW-bu-eSF" id="HTg-YB-JTr"/>
+                        <outlet property="lblHumidity" destination="vE2-l7-KAU" id="UIl-YT-oIw"/>
+                        <outlet property="lblUVIndex" destination="0ux-FZ-2vK" id="toe-e7-5m8"/>
+                        <outlet property="lblWindSpeed" destination="CJW-eb-apf" id="7il-XX-qTD"/>
                         <outlet property="mainView" destination="g8s-WO-1gh" id="Vmv-9q-g4N"/>
                         <outlet property="scrollView" destination="pl7-4t-Mgr" id="nJq-KQ-p2V"/>
                         <outlet property="searchTextField" destination="ZRY-p4-eiZ" id="fe9-mD-gKg"/>
@@ -997,10 +1009,10 @@
         </scene>
     </scenes>
     <resources>
-        <image name="aqi.medium" catalog="system" width="128" height="120"/>
         <image name="calendar" catalog="system" width="128" height="107"/>
+        <image name="humidity.fill" catalog="system" width="128" height="106"/>
         <image name="magnifyingglass" catalog="system" width="128" height="117"/>
-        <image name="thermometer.transmission" catalog="system" width="128" height="122"/>
+        <image name="thermometer.sun.fill" catalog="system" width="98" height="128"/>
         <image name="weather" width="170.66667175292969" height="170.66667175292969"/>
         <image name="wind.snow" catalog="system" width="128" height="111"/>
         <systemColor name="systemBackgroundColor">

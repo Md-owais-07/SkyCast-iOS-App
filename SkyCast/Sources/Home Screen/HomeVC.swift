@@ -7,7 +7,7 @@
 
 import UIKit
 
-class HomeVC: UIViewController, UIScrollViewDelegate {
+class HomeVC: UIViewController, UIScrollViewDelegate, UITextFieldDelegate {
     @IBOutlet weak var searchView: UIView!
     @IBOutlet var mainView: UIView!
     @IBOutlet weak var detailsView: UIView!
@@ -19,6 +19,10 @@ class HomeVC: UIViewController, UIScrollViewDelegate {
     @IBOutlet weak var imageLogo: UIImageView!
     @IBOutlet weak var tempretureLbl: UILabel!
     @IBOutlet weak var temratureDayLbl: UILabel!
+    @IBOutlet weak var lblHumidity: UILabel!
+    @IBOutlet weak var lblUVIndex: UILabel!
+    @IBOutlet weak var lblWindSpeed: UILabel!
+    @IBOutlet weak var btnGotoSearch: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,6 +39,16 @@ class HomeVC: UIViewController, UIScrollViewDelegate {
         forecastView.backgroundColor = .black.withAlphaComponent(0.1)
         forecastView.layer.cornerRadius = 16
         addGradientBackground()
+        
+        btnGotoSearch.addTarget(self, action: #selector(gotoSearch), for: .touchUpInside)
+        
+        searchTextField.delegate = self
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        fetchdata()
+        searchTextField.text = UserData.shared.cityName
     }
     
     override func viewDidLayoutSubviews() {
@@ -45,6 +59,76 @@ class HomeVC: UIViewController, UIScrollViewDelegate {
             gradientLayer.frame = mainView.bounds
         }
     }
+    
+    @objc func gotoSearch() {
+        guard let cityName = searchTextField.text, !cityName.isEmpty else {
+            print("Please enter a city name.")
+            return
+        }
+        UserData.shared.cityName = cityName
+        ApiManager.shared.fetchCurrentWeather(for: cityName) { result in
+            DispatchQueue.main.async {
+                switch result {
+                case.success(let response):
+                    print("SUCCESS: \(response.name)")
+                    print("SUCCESS: \(response.wind.speed)")
+                    self.tempretureLbl.text = "\(response.main.temp)°"
+                    self.lblHumidity.text = "\(response.main.humidity)%"
+                    self.lblWindSpeed.text = "\(response.wind.speed)"
+                    self.lblUVIndex.text = "\(response.main.feels_like)"
+                    self.temratureDayLbl.text = "\(response.weather.first?.main ?? "")"
+                case.failure(let error):
+                    print(error.localizedDescription)
+                }
+            }
+        }
+    }
+    
+    func fetchdata() {
+        ApiManager.shared.fetchCurrentWeather(for: UserData.shared.cityName) { result in
+            DispatchQueue.main.async {
+                switch result {
+                case.success(let response):
+                    print("SUCCESS: \(response.name)")
+                    print("SUCCESS: \(response.wind.speed)")
+                    self.tempretureLbl.text = "\(response.main.temp)°"
+                    self.lblHumidity.text = "\(response.main.humidity)%"
+                    self.lblWindSpeed.text = "\(response.wind.speed)"
+                    self.lblUVIndex.text = "\(response.main.feels_like)"
+                    self.temratureDayLbl.text = "\(response.weather.first?.main ?? "")"
+                case.failure(let error):
+                    print(error.localizedDescription)
+                }
+            }
+        }
+    }
+    
+//    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+//        guard let cityName = searchTextField.text, !cityName.isEmpty else {
+//            print("Please enter a city name.")
+//            return false
+//        }
+//        
+//        ApiManager.shared.fetchCurrentWeather(for: cityName) { result in
+//            DispatchQueue.main.async {
+//                switch result {
+//                case.success(let response):
+//                    print("SUCCESS: \(response.name)")
+//                    print("SUCCESS: \(response.wind.speed)")
+//                    self.tempretureLbl.text = "\(response.main.temp)°"
+//                    self.lblHumidity.text = "\(response.main.humidity)%"
+//                    self.lblWindSpeed.text = "\(response.wind.speed)"
+//                    self.lblUVIndex.text = "\(response.main.feels_like)"
+//                    self.temratureDayLbl.text = "\(response.weather.first?.main ?? "")"
+//                case.failure(let error):
+//                    print(error.localizedDescription)
+//                }
+//            }
+//        }
+//        
+//        print("RETURNING...")
+//        return true
+//    }
     
     func addGradientBackground() {
         let gradientLayer = CAGradientLayer()

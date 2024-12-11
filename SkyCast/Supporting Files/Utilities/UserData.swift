@@ -19,4 +19,13 @@ class UserData {
             userDefault.set(status, forKey: "isNewUser")
         }
     }
+    
+    var cityName: String {
+        get {
+            userDefault.string(forKey: "cityName") ?? ""
+        }
+        set(status) {
+            userDefault.set(status, forKey: "cityName")
+        }
+    }
 }

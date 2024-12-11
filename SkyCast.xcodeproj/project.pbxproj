@@ -7,20 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E91E14DA2D0A2FB10009F41B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E91E14D52D0A2DE40009F41B /* LaunchScreen.storyboard */; };
 		E99CC52D2C5E60A500847382 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E99CC52C2C5E60A500847382 /* AppDelegate.swift */; };
 		E99CC52F2C5E60A500847382 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E99CC52E2C5E60A500847382 /* SceneDelegate.swift */; };
 		E99CC5312C5E60A500847382 /* OnboardingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E99CC5302C5E60A500847382 /* OnboardingVC.swift */; };
 		E99CC5342C5E60A500847382 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = E99CC5332C5E60A500847382 /* Base */; };
 		E99CC5372C5E60A500847382 /* SkyCast.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E99CC5352C5E60A500847382 /* SkyCast.xcdatamodeld */; };
 		E99CC5392C5E60A600847382 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E99CC5382C5E60A600847382 /* Assets.xcassets */; };
-		E99CC53C2C5E60A600847382 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = E99CC53B2C5E60A600847382 /* Base */; };
 		E9D4D4532D0976C500291DA3 /* AppController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D4D4522D0976C500291DA3 /* AppController.swift */; };
 		E9D4D4552D097C9900291DA3 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D4D4542D097C9900291DA3 /* UserData.swift */; };
+		E9D4D4572D0A0ECE00291DA3 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D4D4562D0A0ECE00291DA3 /* ApiManager.swift */; };
+		E9D4D4592D0A10D100291DA3 /* WeatherResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D4D4582D0A10D100291DA3 /* WeatherResponseModel.swift */; };
 		E9FF79612D08D62E00A4FF3C /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FF79602D08D62E00A4FF3C /* HomeVC.swift */; };
-		E9FF79662D08D8E500A4FF3C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E99CC53A2C5E60A600847382 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E91E14D62D0A2DE40009F41B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E99CC5292C5E60A500847382 /* SkyCast.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SkyCast.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E99CC52C2C5E60A500847382 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E99CC52E2C5E60A500847382 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -28,10 +30,11 @@
 		E99CC5332C5E60A500847382 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E99CC5362C5E60A500847382 /* SkyCast.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SkyCast.xcdatamodel; sourceTree = "<group>"; };
 		E99CC5382C5E60A600847382 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		E99CC53B2C5E60A600847382 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E99CC53D2C5E60A600847382 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E9D4D4522D0976C500291DA3 /* AppController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppController.swift; sourceTree = "<group>"; };
 		E9D4D4542D097C9900291DA3 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
+		E9D4D4562D0A0ECE00291DA3 /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = SOURCE_ROOT; };
+		E9D4D4582D0A10D100291DA3 /* WeatherResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherResponseModel.swift; sourceTree = "<group>"; };
 		E9FF79602D08D62E00A4FF3C /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -88,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				E9FF79602D08D62E00A4FF3C /* HomeVC.swift */,
+				E9D4D4582D0A10D100291DA3 /* WeatherResponseModel.swift */,
 			);
 			path = "Home Screen";
 			sourceTree = "<group>";
@@ -129,9 +133,9 @@
 			isa = PBXGroup;
 			children = (
 				E99CC5382C5E60A600847382 /* Assets.xcassets */,
-				E99CC53A2C5E60A600847382 /* LaunchScreen.storyboard */,
 				E99CC53D2C5E60A600847382 /* Info.plist */,
 				E99CC5352C5E60A500847382 /* SkyCast.xcdatamodeld */,
+				E91E14D52D0A2DE40009F41B /* LaunchScreen.storyboard */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -164,6 +168,7 @@
 		E9FF796D2D08DD0500A4FF3C /* Api Manager */ = {
 			isa = PBXGroup;
 			children = (
+				E9D4D4562D0A0ECE00291DA3 /* ApiManager.swift */,
 			);
 			path = "Api Manager";
 			sourceTree = "<group>";
@@ -226,9 +231,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E91E14DA2D0A2FB10009F41B /* LaunchScreen.storyboard in Resources */,
 				E99CC5392C5E60A600847382 /* Assets.xcassets in Resources */,
-				E9FF79662D08D8E500A4FF3C /* LaunchScreen.storyboard in Resources */,
-				E99CC53C2C5E60A600847382 /* Base in Resources */,
 				E99CC5342C5E60A500847382 /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -240,6 +244,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9D4D4572D0A0ECE00291DA3 /* ApiManager.swift in Sources */,
+				E9D4D4592D0A10D100291DA3 /* WeatherResponseModel.swift in Sources */,
 				E99CC5312C5E60A500847382 /* OnboardingVC.swift in Sources */,
 				E99CC52D2C5E60A500847382 /* AppDelegate.swift in Sources */,
 				E99CC5372C5E60A500847382 /* SkyCast.xcdatamodeld in Sources */,
@@ -253,20 +259,21 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		E91E14D52D0A2DE40009F41B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E91E14D62D0A2DE40009F41B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			path = "/Users/owais/Desktop/UIKIt-Project/SkyCast-iOS-App/SkyCast/Resources";
+			sourceTree = "<absolute>";
+		};
 		E99CC5322C5E60A500847382 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				E99CC5332C5E60A500847382 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		E99CC53A2C5E60A600847382 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E99CC53B2C5E60A600847382 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -405,10 +412,11 @@
 				INFOPLIST_KEY_CFBundleDisplayName = SkyCast;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.weather";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = la;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -440,10 +448,11 @@
 				INFOPLIST_KEY_CFBundleDisplayName = SkyCast;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.weather";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = la;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
