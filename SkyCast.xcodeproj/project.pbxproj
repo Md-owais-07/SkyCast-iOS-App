@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		E91E14DA2D0A2FB10009F41B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E91E14D52D0A2DE40009F41B /* LaunchScreen.storyboard */; };
+		E91E14DD2D0AF4CB0009F41B /* Raining.json in Resources */ = {isa = PBXBuildFile; fileRef = E91E14DC2D0AF4CB0009F41B /* Raining.json */; };
+		E91E14E12D0AF5880009F41B /* UIVC+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91E14E02D0AF5880009F41B /* UIVC+Extension.swift */; };
+		E91E14E42D0AF6520009F41B /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = E91E14E32D0AF6520009F41B /* Lottie */; };
+		E91E14E72D0AFBE30009F41B /* Cloudy.json in Resources */ = {isa = PBXBuildFile; fileRef = E91E14E62D0AFBE30009F41B /* Cloudy.json */; };
+		E91E14E82D0AFBE30009F41B /* Clear.json in Resources */ = {isa = PBXBuildFile; fileRef = E91E14E52D0AFBE30009F41B /* Clear.json */; };
+		E91E14EB2D0B29FA0009F41B /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91E14EA2D0B29FA0009F41B /* LocationManager.swift */; };
 		E99CC52D2C5E60A500847382 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E99CC52C2C5E60A500847382 /* AppDelegate.swift */; };
 		E99CC52F2C5E60A500847382 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E99CC52E2C5E60A500847382 /* SceneDelegate.swift */; };
 		E99CC5312C5E60A500847382 /* OnboardingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E99CC5302C5E60A500847382 /* OnboardingVC.swift */; };
@@ -15,7 +21,7 @@
 		E99CC5372C5E60A500847382 /* SkyCast.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E99CC5352C5E60A500847382 /* SkyCast.xcdatamodeld */; };
 		E99CC5392C5E60A600847382 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E99CC5382C5E60A600847382 /* Assets.xcassets */; };
 		E9D4D4532D0976C500291DA3 /* AppController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D4D4522D0976C500291DA3 /* AppController.swift */; };
-		E9D4D4552D097C9900291DA3 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D4D4542D097C9900291DA3 /* UserData.swift */; };
+		E9D4D4552D097C9900291DA3 /* WeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D4D4542D097C9900291DA3 /* WeatherData.swift */; };
 		E9D4D4572D0A0ECE00291DA3 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D4D4562D0A0ECE00291DA3 /* ApiManager.swift */; };
 		E9D4D4592D0A10D100291DA3 /* WeatherResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D4D4582D0A10D100291DA3 /* WeatherResponseModel.swift */; };
 		E9FF79612D08D62E00A4FF3C /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FF79602D08D62E00A4FF3C /* HomeVC.swift */; };
@@ -23,6 +29,11 @@
 
 /* Begin PBXFileReference section */
 		E91E14D62D0A2DE40009F41B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E91E14DC2D0AF4CB0009F41B /* Raining.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Raining.json; sourceTree = "<group>"; };
+		E91E14E02D0AF5880009F41B /* UIVC+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIVC+Extension.swift"; sourceTree = "<group>"; };
+		E91E14E52D0AFBE30009F41B /* Clear.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Clear.json; sourceTree = "<group>"; };
+		E91E14E62D0AFBE30009F41B /* Cloudy.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Cloudy.json; sourceTree = "<group>"; };
+		E91E14EA2D0B29FA0009F41B /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		E99CC5292C5E60A500847382 /* SkyCast.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SkyCast.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E99CC52C2C5E60A500847382 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E99CC52E2C5E60A500847382 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -32,7 +43,7 @@
 		E99CC5382C5E60A600847382 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E99CC53D2C5E60A600847382 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E9D4D4522D0976C500291DA3 /* AppController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppController.swift; sourceTree = "<group>"; };
-		E9D4D4542D097C9900291DA3 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
+		E9D4D4542D097C9900291DA3 /* WeatherData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherData.swift; sourceTree = "<group>"; };
 		E9D4D4562D0A0ECE00291DA3 /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = SOURCE_ROOT; };
 		E9D4D4582D0A10D100291DA3 /* WeatherResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherResponseModel.swift; sourceTree = "<group>"; };
 		E9FF79602D08D62E00A4FF3C /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
@@ -43,12 +54,55 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E91E14E42D0AF6520009F41B /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E91E14DB2D0AF4B30009F41B /* App Animation */ = {
+			isa = PBXGroup;
+			children = (
+				E91E14DC2D0AF4CB0009F41B /* Raining.json */,
+				E91E14E52D0AFBE30009F41B /* Clear.json */,
+				E91E14E62D0AFBE30009F41B /* Cloudy.json */,
+			);
+			path = "App Animation";
+			sourceTree = "<group>";
+		};
+		E91E14DF2D0AF5760009F41B /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				E91E14E02D0AF5880009F41B /* UIVC+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		E91E14E92D0B29EA0009F41B /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				E91E14EA2D0B29FA0009F41B /* LocationManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		E93C46CF2D0C730A0095954B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E9D4D4582D0A10D100291DA3 /* WeatherResponseModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E93C46D02D0C73140095954B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E9FF79602D08D62E00A4FF3C /* HomeVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		E99CC5202C5E60A500847382 = {
 			isa = PBXGroup;
 			children = (
@@ -90,8 +144,8 @@
 		E9D4D44D2D08DDB000291DA3 /* Home Screen */ = {
 			isa = PBXGroup;
 			children = (
-				E9FF79602D08D62E00A4FF3C /* HomeVC.swift */,
-				E9D4D4582D0A10D100291DA3 /* WeatherResponseModel.swift */,
+				E93C46D02D0C73140095954B /* Controller */,
+				E93C46CF2D0C730A0095954B /* Model */,
 			);
 			path = "Home Screen";
 			sourceTree = "<group>";
@@ -115,6 +169,9 @@
 		E9D4D4502D09767200291DA3 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				E91E14E92D0B29EA0009F41B /* Manager */,
+				E91E14DF2D0AF5760009F41B /* Extension */,
+				E91E14DB2D0AF4B30009F41B /* App Animation */,
 				E9D4D4512D0976B600291DA3 /* Utilities */,
 			);
 			path = "Supporting Files";
@@ -124,7 +181,7 @@
 			isa = PBXGroup;
 			children = (
 				E9D4D4522D0976C500291DA3 /* AppController.swift */,
-				E9D4D4542D097C9900291DA3 /* UserData.swift */,
+				E9D4D4542D097C9900291DA3 /* WeatherData.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -217,6 +274,9 @@
 				Base,
 			);
 			mainGroup = E99CC5202C5E60A500847382;
+			packageReferences = (
+				E91E14E22D0AF6520009F41B /* XCRemoteSwiftPackageReference "lottie-spm" */,
+			);
 			productRefGroup = E99CC52A2C5E60A500847382 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -231,8 +291,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E91E14DD2D0AF4CB0009F41B /* Raining.json in Resources */,
 				E91E14DA2D0A2FB10009F41B /* LaunchScreen.storyboard in Resources */,
 				E99CC5392C5E60A600847382 /* Assets.xcassets in Resources */,
+				E91E14E72D0AFBE30009F41B /* Cloudy.json in Resources */,
+				E91E14E82D0AFBE30009F41B /* Clear.json in Resources */,
 				E99CC5342C5E60A500847382 /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -244,12 +307,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E91E14E12D0AF5880009F41B /* UIVC+Extension.swift in Sources */,
 				E9D4D4572D0A0ECE00291DA3 /* ApiManager.swift in Sources */,
 				E9D4D4592D0A10D100291DA3 /* WeatherResponseModel.swift in Sources */,
+				E91E14EB2D0B29FA0009F41B /* LocationManager.swift in Sources */,
 				E99CC5312C5E60A500847382 /* OnboardingVC.swift in Sources */,
 				E99CC52D2C5E60A500847382 /* AppDelegate.swift in Sources */,
 				E99CC5372C5E60A500847382 /* SkyCast.xcdatamodeld in Sources */,
-				E9D4D4552D097C9900291DA3 /* UserData.swift in Sources */,
+				E9D4D4552D097C9900291DA3 /* WeatherData.swift in Sources */,
 				E9FF79612D08D62E00A4FF3C /* HomeVC.swift in Sources */,
 				E99CC52F2C5E60A500847382 /* SceneDelegate.swift in Sources */,
 				E9D4D4532D0976C500291DA3 /* AppController.swift in Sources */,
@@ -492,6 +557,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E91E14E22D0AF6520009F41B /* XCRemoteSwiftPackageReference "lottie-spm" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-spm.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.5.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E91E14E32D0AF6520009F41B /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E91E14E22D0AF6520009F41B /* XCRemoteSwiftPackageReference "lottie-spm" */;
+			productName = Lottie;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		E99CC5352C5E60A500847382 /* SkyCast.xcdatamodeld */ = {

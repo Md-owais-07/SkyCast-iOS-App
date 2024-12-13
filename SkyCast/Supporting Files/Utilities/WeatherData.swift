@@ -7,8 +7,8 @@
 
 import Foundation
 
-class UserData {
-    static let shared = UserData()
+class WeatherData {
+    static let shared = WeatherData()
     private let userDefault = UserDefaults.standard
     
     var isNewUser: Bool {
@@ -26,6 +26,15 @@ class UserData {
         }
         set(status) {
             userDefault.set(status, forKey: "cityName")
+        }
+    }
+    
+    var currentCity: String {
+        get {
+            userDefault.string(forKey: "currentCity") ?? ""
+        }
+        set(status) {
+            userDefault.set(status, forKey: "currentCity")
         }
     }
 }

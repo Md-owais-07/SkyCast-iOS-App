@@ -18,14 +18,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="weather" translatesAutoresizingMaskIntoConstraints="NO" id="LCK-eu-Md3">
-                                <rect key="frame" x="121.66666666666669" y="351" width="150" height="150"/>
+                                <rect key="frame" x="131.66666666666666" y="361" width="129.99999999999997" height="130"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="LCK-eu-Md3" secondAttribute="height" id="EFp-0w-UGU"/>
-                                    <constraint firstAttribute="height" constant="150" id="IgJ-br-0Tr"/>
+                                    <constraint firstAttribute="height" constant="130" id="IgJ-br-0Tr"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SkyCast" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5XC-Np-V6e">
-                                <rect key="frame" x="0.0" y="501" width="393" height="50"/>
+                                <rect key="frame" x="0.0" y="491" width="393" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="z0o-Kp-tA2"/>
                                 </constraints>

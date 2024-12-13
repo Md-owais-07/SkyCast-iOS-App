@@ -21,7 +21,7 @@ class OnboardingVC: UIViewController {
     }
     
     @objc func gotoHome() {
-        UserData.shared.isNewUser = true
+        WeatherData.shared.isNewUser = true
         let vc = AppController.shared.home
         self.navigationController?.pushViewController(vc, animated: true)
     }

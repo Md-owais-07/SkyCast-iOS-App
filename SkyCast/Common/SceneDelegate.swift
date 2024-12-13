@@ -19,7 +19,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         //        guard let window = (scene as? UIWindowScene) else { return }
         let window = UIWindow(windowScene: scene as! UIWindowScene)
         
-        if UserData.shared.isNewUser {
+        if WeatherData.shared.isNewUser {
             let homeVC = AppController.shared.home
             let navigationController = UINavigationController(rootViewController: homeVC)
             navigationController.isNavigationBarHidden = true
